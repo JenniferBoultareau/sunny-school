@@ -8,27 +8,28 @@ import bedroom from '../../assets/img/summary/bedroom.jpg';
 import escalier from '../../assets/img/summary/escalier.jpg';
 import salon from '../../assets/img/summary/salon.jpg';
 
+import './Summary.css';
 
 const Summary = () => {
   return(
-    <div>
+    <div class='container sum'>
   
-      <div class="row">
+      <div class='row'>
         <img src={bureau} alt='salon'/>
       </div> 
       
-      <div class="row">
+      <div class='row'>
         <img src={bedroom} alt='salon'/>
         <img src={escalier} alt='salon'/>
         <img src={bathroom} alt='salon'/>
       </div> 
       
-      <div class="row">
+      <div class='row'>
         <img src={salon} alt='salon'/>
         <img src={cuisine} alt='salon'/>
       </div> 
 
-      <div class="row">
+      <div class='row'>
         <img src={buanderie} alt='salon'/>
       </div> 
 

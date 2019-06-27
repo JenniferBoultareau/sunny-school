@@ -1,5 +1,5 @@
 .sum {
-  background-image: url(../../assets/img/backgrounds/forest.jpg);
+  background: url(../../assets/img/backgrounds/forest.jpg) no-repeat fixed center;
   height: 100vh;
   width: 100vw;
 }
