@@ -13,7 +13,7 @@ export default function ChildrenBedroom() {
             <i className='material-icons'>control_point</i>
           </a>}>
           Prends un pull au lieu de mettre le chauffage à fond
-      </Modal>
+        </Modal>
         <Modal
           header="La question sur la chambre 2"
           bottomSheet
