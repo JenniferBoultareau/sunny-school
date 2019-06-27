@@ -12,7 +12,7 @@ import './Summary.css';
 const Summary = () => {
   return(
     <div class='sum'>
-      <div class='container'>
+      <div class='container container-summary'>
 
           <div class='row top-row'>
             <img src={bureau} alt='salon'/>

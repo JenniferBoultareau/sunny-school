@@ -1,5 +1,5 @@
 .sum {
-  height: 100vh !important;
+  height: 100% !important;
   width: 100vw !important;
   background: url(../../assets/img/backgrounds/forest.jpg) fixed no-repeat center center;
   /* <a href="https://www.freepik.com/free-photos-vectors/background">Background vector created by brgfx - www.freepik.com</a> */
@@ -7,16 +7,21 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  min-height: 100vh;
 
 }
 
-.row-middle {
+.container-summary {
+  border: 15px solid orange;
+  max-height: 100vmax !important;
+}
+
+.top-row, .row-middle, .bottom-row {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   margin: 0 !important;
   padding: 0 !important;
-  border-left: 15px solid orange;
-  border-right: 15px solid orange;
 }
 
 .col {
@@ -24,21 +29,6 @@
   padding: 0 !important;
 }
 
-.top-row, .bottom-row {
-  /* height: 20vh; */
-  display: flex;
-  justify-content: center;
-  border-left: 15px solid orange;
-  border-right: 15px solid orange;
-}
-
-.top-row{
-  border-top: 15px solid orange;
-} 
-
-.bottom-row {
-  border-bottom: 15px solid orange;
-}
 
 img {
   border: 15px solid orange !important;
