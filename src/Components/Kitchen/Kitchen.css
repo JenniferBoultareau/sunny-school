@@ -1,3 +1,27 @@
 .bg-image {
-    background-image: url('../../assets/img/Cuisine/Cuisine.jpg')
+  background-image: url(../../assets/img/Cuisine/Cuisine4.jpg);
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
+
+.parent {
+  display: grid;
+  grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+  grid-template-rows: 16% 16% 16% 16% 16% 16% 4%;
+  height: 100vh;
+}
+
+.button1 {
+  grid-row-start: 5;
+  grid-column-start: 2;
+}
+
+.button2 {
+  grid-row-start: 5;
+  grid-column-start: 7;
+}
+
