@@ -20,9 +20,9 @@ const Summary = () => {
           </div> 
           
           <div class='row'>
-            <div class='col s12 m4'><img src={bedroom} alt='salon'/></div>
-            <div class='col s12 m4'><img src={escalier} alt='salon'/></div>
-            <div class='col s12 m4'><img src={bathroom} alt='salon'/></div>
+            <div class='col s12 m6'><img src={bedroom} alt='salon'/></div>
+            {/* <div class='col s12 m6'><img src={escalier} alt='salon'/></div> */}
+            <div class='col s12 m6'><img src={bathroom} alt='salon'/></div>
             <div class='col s12 m6'><img src={salon} alt='salon'/></div>
             <div class='col s12 m6'><img src={cuisine} alt='salon'/></div>
           </div> 
