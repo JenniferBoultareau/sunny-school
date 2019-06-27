@@ -12,28 +12,31 @@ import './Summary.css';
 
 const Summary = () => {
   return(
-    <div class='container sum'>
-  
-      <div class='row'>
-        <img src={bureau} alt='salon'/>
-      </div> 
-      
-      <div class='row'>
-        <img src={bedroom} alt='salon'/>
-        <img src={escalier} alt='salon'/>
-        <img src={bathroom} alt='salon'/>
-      </div> 
-      
-      <div class='row'>
-        <img src={salon} alt='salon'/>
-        <img src={cuisine} alt='salon'/>
-      </div> 
+    <div class='sum'>
+      <div class='container'>
+    
+        <div class='top-row'>
+          <img src={bureau} alt='salon'/>
+        </div> 
+        
+        <div class='row'>
+          <img src={bedroom} alt='salon'/>
+          <img src={escalier} alt='salon'/>
+          <img src={bathroom} alt='salon'/>
+        </div> 
+        
+        <div class='row'>
+          <img src={salon} alt='salon'/>
+          <img src={cuisine} alt='salon'/>
+        </div> 
 
-      <div class='row'>
-        <img src={buanderie} alt='salon'/>
-      </div> 
+        <div class='bottom-row'>
+          <img src={buanderie} alt='salon'/>
+        </div> 
 
-    </div>
+
+        </div>
+      </div>
   )
 };
 

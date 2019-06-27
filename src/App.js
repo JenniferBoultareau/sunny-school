@@ -12,6 +12,7 @@ import Summary from './Components/Summary/Summary';
 
 
 function App() {
+
   const initM = () => {
     M.AutoInit();
   }; initM();
@@ -22,6 +23,7 @@ function App() {
       <Summary />
     </div>
   );
+  
 }
 
 export default App;

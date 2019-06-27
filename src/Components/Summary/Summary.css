@@ -1,8 +1,37 @@
 .sum {
-  background: url(../../assets/img/backgrounds/forest.jpg) no-repeat fixed center;
-  height: 100vh;
-  width: 100vw;
+  height: 100vh !important;
+  width: 100vw !important;
+  background: url(../../assets/img/backgrounds/forest.jpg) fixed no-repeat center center;
+  /* <a href="https://www.freepik.com/free-photos-vectors/background">Background vector created by brgfx - www.freepik.com</a> */
+  background-size: cover;
 }
 
+/* .container {
+  display: flex;
 
-/* <a href="https://www.freepik.com/free-photos-vectors/background">Background vector created by brgfx - www.freepik.com</a> */
+} */
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0 !important;
+  border-left: 15px solid orange;
+  border-right: 15px solid orange;
+  height: 20vh;
+}
+
+.top-row, .bottom-row {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  margin: 0 !important;
+  border-left: 15px solid orange;
+  border-right: 15px solid orange;
+  height: 20vh;
+}
+
+img {
+  border: 15px solid orange;
+}
