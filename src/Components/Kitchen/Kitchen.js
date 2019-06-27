@@ -1,16 +1,16 @@
 import React from 'react';
 import './Kitchen.css';
-import { Row, Container, Col, Modal, Button } from 'react-materialize';
+import { Row, Container, Modal } from 'react-materialize';
 
 function Kitchen() {
   return (
-    <div className='bg-image'>
+    <div className='bg-image-kitchen'>
         <Container >
-          <Row className='parent'>
-            <Modal header="Modal Header" bottomSheet trigger={<a className="btn-floating btn-large cyan accent-2 pulse button1"><i class="material-icons">cl1</i></a>}>
+          <Row className='parent-kitchen'>
+            <Modal header="Modal Header" bottomSheet trigger={<a className="btn-floating btn-large yellow darken-1 pulse button-kitchen1"><i class="material-icons">wb_sunny</i></a>}>
               Lorem
             </Modal>
-            <Modal header="Modal Header" bottomSheet trigger={<a className="btn-floating btn-large yellow darken-1 pulse button2"><i class="material-icons">cl2</i></a>}>
+            <Modal header="Modal Header" bottomSheet trigger={<a className="btn-floating btn-large yellow darken-1 pulse button-kitchen2"><i class="material-icons">wb_sunny</i></a>}>
               blablabla
             </Modal>
           </Row>

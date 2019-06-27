@@ -5,7 +5,6 @@ import buanderie from '../../assets/img/summary/buanderie.jpg';
 import bureau from '../../assets/img/summary/bureau.jpg';
 import cuisine from '../../assets/img/summary/cuisine.jpg';
 import bedroom from '../../assets/img/summary/bedroom.jpg';
-import escalier from '../../assets/img/summary/escalier.jpg';
 import salon from '../../assets/img/summary/salon.jpg';
 
 import './Summary.css';
@@ -21,7 +20,6 @@ const Summary = () => {
           
           <div class='row'>
             <div class='col s12 m6'><img src={bedroom} alt='salon'/></div>
-            {/* <div class='col s12 m6'><img src={escalier} alt='salon'/></div> */}
             <div class='col s12 m6'><img src={bathroom} alt='salon'/></div>
             <div class='col s12 m6'><img src={salon} alt='salon'/></div>
             <div class='col s12 m6'><img src={cuisine} alt='salon'/></div>

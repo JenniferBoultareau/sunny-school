@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import home from '../../assets/img/Home/home.png';
 import './Home.css';
 
 import { Button } from 'react-materialize';
