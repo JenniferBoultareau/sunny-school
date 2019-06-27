@@ -18,7 +18,7 @@ const Summary = () => {
             <img src={bureau} alt='salon'/>
           </div> 
           
-          <div class='row'>
+          <div class='row row-middle'>
             <div class='col s12 m6'><img src={bedroom} alt='salon'/></div>
             <div class='col s12 m6'><img src={bathroom} alt='salon'/></div>
             <div class='col s12 m6'><img src={salon} alt='salon'/></div>

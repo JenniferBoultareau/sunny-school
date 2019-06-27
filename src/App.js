@@ -9,7 +9,7 @@ import Home from './Components/Home/Home';
 import Summary from './Components/Summary/Summary';
 import Kitchen  from './Components/Kitchen/Kitchen';
 import LivingRoom from './Components/LivingRoom/LivingRoom';
-
+import Bathroom from './Components/Bathroom/Bathroom';
 
 function App() {
 
@@ -19,10 +19,11 @@ function App() {
 
   return (
     <div className="App">
-    <Route exact path="/" component={Home} />
-    <Route exact path="/house" component={Summary} />
-    <Route exact path='/kitchen' component={Kitchen} />
-    <Route exact path='/livingroom' component={LivingRoom} />
+      <Route exact path="/" component={Home} />
+      <Route exact path="/house" component={Summary} />
+      <Route exact path='/house/kitchen' component={Kitchen} />
+      <Route exact path='/house/livingroom' component={LivingRoom} />
+      <Route exact path='/house/bathroom' component={Bathroom} />
     </div>
   );
   
