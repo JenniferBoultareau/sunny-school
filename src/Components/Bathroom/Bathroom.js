@@ -1,13 +1,17 @@
 import React from 'react';
-import './Bathroom.css';
+import { Link } from 'react-router-dom';
 import { Modal, RadioGroup } from 'react-materialize';
 import Button from 'react-materialize/lib/Button';
+import './Bathroom.css';
 
 
 export default function Bathroom() {
   return (
-    <div className='hero'>
+    <div className='hero1'>
       <div className='bathroom'>
+      <Link to='/house'>
+      <i class="medium material-icons">arrow_back</i>
+      </Link>
       <Modal 
         header="La question sur la baignoire ? Selectionne la bonne réponse" 
         bottomSheet 

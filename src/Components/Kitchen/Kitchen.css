@@ -8,7 +8,7 @@
   background-attachment: fixed;
 }
 
-.parent-kitchen {
+.kitchen {
   display: grid;
   grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
   grid-template-rows: 16% 16% 16% 16% 16% 16% 4%;
@@ -17,7 +17,7 @@
 
 .button-kitchen1 {
   grid-row-start: 5;
-  grid-column-start: 2;
+  grid-column-start: 3;
 }
 
 .button-kitchen2 {

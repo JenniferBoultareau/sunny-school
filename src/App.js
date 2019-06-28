@@ -10,6 +10,7 @@ import Summary from './Components/Summary/Summary';
 import Kitchen  from './Components/Kitchen/Kitchen';
 import LivingRoom from './Components/LivingRoom/LivingRoom';
 import Bathroom from './Components/Bathroom/Bathroom';
+import ChildrenBedroom from './Components/ChildrenBedroom/ChildrenBedroom';
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
       <Route exact path='/house/kitchen' component={Kitchen} />
       <Route exact path='/house/livingroom' component={LivingRoom} />
       <Route exact path='/house/bathroom' component={Bathroom} />
+      <Route exact path='/house/bedroom' component={ChildrenBedroom} />
     </div>
   );
   

@@ -1,11 +1,15 @@
 import React from 'react';
-import './ChildrenBedroom.css';
+import { Link } from 'react-router-dom';
 import { Modal } from 'react-materialize';
+import './ChildrenBedroom.css';
 
 export default function ChildrenBedroom() {
   return (
     <div className='hero'>
       <div className='childroom'>
+        <Link to='/house'>
+      <i class="medium material-icons">arrow_back</i>
+      </Link>
         <Modal
           header="La question sur la chambre 1"
           bottomSheet

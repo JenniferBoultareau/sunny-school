@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 
 import bathroom from '../../assets/img/summary/bathroom.jpg';
 import buanderie from '../../assets/img/summary/buanderie.jpg';
@@ -10,27 +12,41 @@ import salon from '../../assets/img/summary/salon.jpg';
 import './Summary.css';
 
 const Summary = () => {
-  return(
-    <div class='sum'>
-      <div class='container container-summary'>
-
-          <div class='row top-row'>
-            <img src={bureau} alt='salon'/>
-          </div> 
-          
-          <div class='row row-middle'>
-            <div class='col s12 m6'><img src={bedroom} alt='salon'/></div>
-            <div class='col s12 m6'><img src={bathroom} alt='salon'/></div>
-            <div class='col s12 m6'><img src={salon} alt='salon'/></div>
-            <div class='col s12 m6'><img src={cuisine} alt='salon'/></div>
-          </div> 
-
-          <div class='row bottom-row'>
-            <img src={buanderie} alt='salon'/>
-          </div> 
-
+  return (
+    <div className='sum'>
+      <div className='container container-summary'>
+        <div className='row top-row'>
+          <img src={bureau} alt='salon' />
+        </div>
+        <div className='row row-middle'>
+          <div className='col s12 m6'>
+            <Link to='/house/bedroom'>
+              <img src={bedroom} alt='salon'/>
+            </Link>
+          </div>
+          <div className='col s12 m6'>
+          <Link to='/house/bathroom'>
+          <img src={bathroom} alt='salon' />
+          </Link>
+          </div>
+          <div className='col s12 m6'>
+          <Link to='/house/livingroom'>
+          <img src={salon} alt='salon' />
+          </Link>
+          </div>
+          <div className='col s12 m6'>
+          <Link to='/house/kitchen'>
+          <img src={cuisine} alt='salon' />
+          </Link>
+          </div>
+        </div>
+        <div className='row bottom-row'>
+          <img src={buanderie} alt='salon' />
         </div>
       </div>
+      <div className='sumGrid'>
+      </div>
+    </div>
   )
 };
 
