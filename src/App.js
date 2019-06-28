@@ -6,6 +6,9 @@ import './App.css';
 import Bathroom from './Components/Bathroom/Bathroom';
 
 function App() {
+  const initM = () => {
+    M.AutoInit();
+  }; initM();
   return (
     <div className="App">
       <Bathroom/>
