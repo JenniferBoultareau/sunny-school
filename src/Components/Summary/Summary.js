@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import bathroom from '../../assets/img/summary/bathroom.jpg';
 import buanderie from '../../assets/img/summary/buanderie.jpg';
@@ -8,10 +9,16 @@ import bedroom from '../../assets/img/summary/bedroom.jpg';
 import salon from '../../assets/img/summary/salon.jpg';
 
 import './Summary.css';
+import { Button } from 'react-materialize';
 
 const Summary = () => {
   return(
     <div class='sum'>
+      <Link to='/house/result'>
+        <a className="btn-floating btn-large yellow darken-1 pulse button-kitchen1">
+          <i class="material-icons">wb_sunny</i>
+        </a>
+        </Link>
       <div class='container container-summary'>
 
           <div class='row top-row'>

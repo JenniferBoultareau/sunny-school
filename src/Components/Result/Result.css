@@ -10,27 +10,19 @@
   min-height: 100vh;
 }
 
-.container-summary {
-  border: 15px solid orange;
-  max-height: 100vmax !important;
+.card-title {
+  font-family: 'Indie Flower', cursive;
+  font-size:  3rem !important;
 }
 
-.top-row, .row-middle, .bottom-row {
+.card-action {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 0 !important;
-  padding: 0 !important;
+  justify-content: space-between;
 }
 
-.col {
-  margin: 0 !important;
-  padding: 0 !important;
-}
-
-
-img {
-  border: 15px solid orange !important;
-  width: 100%;
-  height: 100%;
+.replay {
+  margin: auto !important;
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+  font-size:  1.5rem;
 }
