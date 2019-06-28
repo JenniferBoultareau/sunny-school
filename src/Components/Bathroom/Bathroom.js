@@ -61,7 +61,7 @@ export default function Bathroom() {
 
       <Modal className='Lavabo'
         header="Une famille utilise 412l d’eau par jour. Calcule sa consommation pendant une semaine ?" 
-        bottomSheet
+        
         actions={
           <Button modal="close" flat >Fermer</Button>
           }
