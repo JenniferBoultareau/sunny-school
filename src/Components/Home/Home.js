@@ -5,6 +5,10 @@ import './Home.css';
 import { Button } from 'react-materialize';
 
 function Home() {
+
+  // a decommenter quand localStorage linké aux pages du jeu
+  // localStorage.removeItem('Solar_myCurrentScore');
+
   return (
     <div className='backgroundHome'>
       <h1 className='title'>SOLAR ENERGY GAME!</h1>

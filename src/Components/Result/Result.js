@@ -5,15 +5,23 @@ import './Result.css';
 
 const Result = () => {
 
+  // to get the former best Result and current result of the Game in localstorage
+  let myBestScore = localStorage.getItem('Solar_myBestScore');
+  let myCurrentScore = localStorage.getItem('Solar_myCurrentScore');
+
+  const setMyBestScore = (myBestScore, myCurrentScore) => {
+    if (myBestScore < myCurrentScore) {
+      myBestScore = localStorage.getItem('Solar_myCurrentScore');
+    }
+  };
+  setMyBestScore(myBestScore, myCurrentScore);
+
+
  // to remove when everything is working on each pages of the game
   localStorage.removeItem('Solar_myBestScore');
   localStorage.removeItem('Solar_myCurrentScore');
-  localStorage.setItem('Solar_myBestScore', '340');
+  localStorage.setItem('Solar_myBestScore', '340')
   localStorage.setItem('Solar_myCurrentScore', '670');
-
-  // to get the former best Result and curretn result of the Game in localstorage
-  const myBestScore = localStorage.getItem('Solar_myBestScore');
-  const myCurrentScore = localStorage.getItem('Solar_myCurrentScore');
 
   return(
     <div className='sum'>
