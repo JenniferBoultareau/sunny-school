@@ -20,19 +20,16 @@ export default function Bathroom() {
       <i class="medium material-icons">arrow_back</i>
       </Link>
       <Modal 
-        header="La question sur la baignoire ? Sélectionne la bonne réponse:" 
+        header='Pour moins consommer d’eau chaude, vaut-il mieux prendre une douche ou un bain?' 
         bottomSheet
         actions={
           <Button onClick= {multipleAction
-          
           } modal="close" flat >Fermer</Button>
           }
           options = {
             {dismissible:false
         }
-        }
-
-      
+        }      
         trigger=
           {<a className='btn-floating btn-large pulse bathtub pink'>
             <i className='material-icons'>control_point</i>
@@ -45,13 +42,14 @@ export default function Bathroom() {
                 withGap
                 value={response}
                 options={[
-                  {label: 'Réponse A',value: 'false'},
-                  {label: 'Réponse B',value: 'correct'},
-                  {label: 'Réponse C',value: 'false'}
+                  {label: 'Bain',value: 'false'},
+                  {label: 'Douche',value: 'correct'}
                 ]}
               />
           :
-            (response === 'correct') ? <div>'Bonne réponse'</div>:<div>'Mauvaise réponse'</div>
+            (response === 'correct') ? <div>'Bonne réponse. Une baignoire correctement remplie équivaut à 5 à 7 douches. Si tu dois choisir entre douche et bain, 
+              choisis la douche sans hésitation. A condition de ne pas y rester plus de 5-10 minutes!'</div>:<div>'Dommage... Mauvaise réponse. Une baignoire correctement remplie équivaut à 5 à 7 douches. Si tu dois choisir entre douche et bain, 
+                choisis la douche sans hésitation. A condition de ne pas y rester plus de 5-10 minutes!'</div>
         }
         <Button 
           className="btn waves-effect waves-light" 
@@ -64,7 +62,7 @@ export default function Bathroom() {
         </Button>
       </Modal>
       <Modal 
-        header="La question sur le lavabo ?" 
+        header="Une famille utilise 412l d’eau par jour. Calcule sa consommation pendant une semaine?" 
         bottomSheet 
         trigger=
         {<a className='btn-floating btn-large pulse lavabo pink'>
@@ -77,9 +75,9 @@ export default function Bathroom() {
             withGap
             value=''
             options={[
-              {label: 'Réponse A',value: 'correct'},
-              {label: 'Réponse B',value: 'false'},
-              {label: 'Réponse C',value: 'false'}
+              {label: '2884 litres',value: 'correct'},
+              {label: '2060 litres',value: 'false'},
+              {label: '4120 litres',value: 'false'}
             ]}
           />
         <Button 
