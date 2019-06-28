@@ -24,5 +24,24 @@
     grid-row-start: 1;
     grid-column-start: 13;
   }
+
   
+.TV-radio, .lamp-radio {
+  display: flex;
+  flex-direction: column;
+}
+
+span {
+  margin: 0.5rem !important;
+  font-size: 1.8em !important;
+  color: #000000;
+}
+
+.waves-effect {
+  margin-top: 2rem;
+}
+
+.solution {
+  font-size: 1.8em !important;
+}
   
