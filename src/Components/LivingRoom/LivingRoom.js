@@ -23,8 +23,7 @@ function LivingRoom() {
            <Button 
             className='btn waves-effect waves-light' 
             type='submit' 
-            name='action'
-            /*onChange={() => }*/>
+            name='action'>
             ok
             </Button>
           </Modal>
