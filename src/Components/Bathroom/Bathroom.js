@@ -5,13 +5,10 @@ import Button from 'react-materialize/lib/Button';
 import './Bathroom.css';
 
 export default function Bathroom() {
-  const [response, setResponse] = useState();
-  const [phlo, setPhlo] = useState(false);
-
-  const multipleAction = () => {
-    setPhlo(false);
-    setResponse()
-  }
+  const [responseBathtub, setResponseBathtub] = useState();
+  const [responseLavabo, setResponseLavabo] = useState();
+  const [answerBathtub, setAnswerBathtub] = useState(false);
+  const [answerLavabo, setAnswerLavabo] = useState(false);
 
   return (
     <div className='hero1'>
@@ -84,10 +81,11 @@ export default function Bathroom() {
           className="btn waves-effect waves-light" 
           type="submit" 
           name="action"
+          onClick = {() => setAnswerLavabo(true)}
           >
           Envoyer
           <i className="material-icons right">send</i>
-        </Button>      
+        </Button>
         </Modal>
       </div>
     </div>
