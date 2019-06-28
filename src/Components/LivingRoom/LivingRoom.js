@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
-import { Row, Container, Modal, Button, RadioGroup } from 'react-materialize';
+import { Modal, Button } from 'react-materialize';
 import './LivingRoom.css';
 
 function LivingRoom() {
@@ -16,18 +16,10 @@ function LivingRoom() {
             bottomSheet
             trigger={<a className="btn-floating btn-large purple accent-3 pulse button-livingroom1"><i className="material-icons">wb_sunny</i></a>}
           >
-            <RadioGroup
-              name="size"
-              withGap
-              label="T-Shirt Size"
-              value="xl"
-              options={[{ label: 'Réponse A', value: 'xl' }, { label: 'Réponse2', value: 'l' }, { label: 'Réponse3', value: 'm' }]}
-            />
             <Button
               className='btn waves-effect waves-light'
               type='submit'
-              name='action'
-            /*onChange={() => }*/>
+              name='action'>
               ok
             </Button>
           </Modal>

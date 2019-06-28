@@ -28,7 +28,6 @@ function App() {
       <Route exact path='/house/bedroom' component={ChildrenBedroom} />
     </div>
   );
-  
 }
 
 export default App;

@@ -1,11 +1,18 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
 import { Modal, RadioGroup } from 'react-materialize';
 import Button from 'react-materialize/lib/Button';
 import './Bathroom.css';
 
-
 export default function Bathroom() {
+  const [response, setResponse] = useState();
+  const [phlo, setPhlo] = useState(false);
+
+  const multipleAction = () => {
+    setPhlo(false);
+    setResponse()
+  }
+
   return (
     <div className='hero1'>
       <div className='bathroom'>
@@ -13,35 +20,77 @@ export default function Bathroom() {
       <i class="medium material-icons">arrow_back</i>
       </Link>
       <Modal 
-        header="La question sur la baignoire ? Selectionne la bonne réponse" 
-        bottomSheet 
-        trigger={<a className='btn-floating btn-large pulse bathtub pink'>
-        <i className='material-icons'>control_point</i>
-        </a>}>
-          <RadioGroup
-            radioClassNames	= 'bathtub-radio'
-            onChange=''
-            name='question '
-            withGap= 'true'
-            value='xl'
-            options={[
-              {label: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',value: 'bonne réponse'},
-              {label: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',value: 'l'},
-              {label: ' Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',value: 'C'}
-            ]}
-          />
-        <Button className="btn waves-effect waves-light" type="submit" name="action">Submit
+        header="La question sur la baignoire ? Sélectionne la bonne réponse:" 
+        bottomSheet
+        actions={
+          <Button onClick= {multipleAction
+          
+          } modal="close" flat >Fermer</Button>
+          }
+          options = {
+            {dismissible:false
+        }
+        }
+
+      
+        trigger=
+          {<a className='btn-floating btn-large pulse bathtub pink'>
+            <i className='material-icons'>control_point</i>
+          </a>}>
+          { !phlo ? 
+                < RadioGroup
+                radioClassNames	= 'bathtub-radio'
+                onChange={(event) => setResponse(event.target.value) }
+                name='question'
+                withGap
+                value={response}
+                options={[
+                  {label: 'Réponse A',value: 'false'},
+                  {label: 'Réponse B',value: 'correct'},
+                  {label: 'Réponse C',value: 'false'}
+                ]}
+              />
+          :
+            (response === 'correct') ? <div>'Bonne réponse'</div>:<div>'Mauvaise réponse'</div>
+        }
+        <Button 
+          className="btn waves-effect waves-light" 
+          type="submit" 
+          name="action"
+          onClick = {() => setPhlo(true)}
+          >
+          Envoyer
           <i className="material-icons right">send</i>
         </Button>
       </Modal>
       <Modal 
-      header="La question sur le lavabo qui va te retourner le cerveau" 
-      bottomSheet 
-      trigger={<a className='btn-floating btn-large pulse lavabo pink'>
-      <i className='material-icons'>control_point</i>
-      </a>}>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-      </Modal>
+        header="La question sur le lavabo ?" 
+        bottomSheet 
+        trigger=
+        {<a className='btn-floating btn-large pulse lavabo pink'>
+        <i className='material-icons'>control_point</i>
+        </a>}>
+        <RadioGroup
+            radioClassNames	= 'bathtub-radio'
+            // onChange={onChange}
+            name='question'
+            withGap
+            value=''
+            options={[
+              {label: 'Réponse A',value: 'correct'},
+              {label: 'Réponse B',value: 'false'},
+              {label: 'Réponse C',value: 'false'}
+            ]}
+          />
+        <Button 
+          className="btn waves-effect waves-light" 
+          type="submit" 
+          name="action"
+          >
+          Envoyer
+          <i className="material-icons right">send</i>
+        </Button>      
+        </Modal>
       </div>
     </div>
   )
