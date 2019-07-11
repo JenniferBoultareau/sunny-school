@@ -13,6 +13,9 @@ export default function Bathroom() {
   return (
     <div className='hero1'>
       <div className='bathroom'>
+      <Link to='/house'>
+        <i class="medium material-icons">arrow_back</i>
+      </Link>
       <Modal className='bathtub'
         header="Quel est le meilleur moyen de te laver en dépendant moins d’énergie?" 
         bottomSheet

@@ -12,7 +12,7 @@ export default function ChildrenBedroom() {
   return (
     <div className='hero3'>
       <div className='childroom'>
-        <Link to='/house'>
+      <Link to='/house'>
       <i class="medium material-icons">arrow_back</i>
       </Link>
       <Modal className='bathtub'
